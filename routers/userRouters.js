@@ -6,8 +6,8 @@ const {getallUsers,createNewUser,findUserByRole,deleteUserByID,updateUserById,up
 router.get('/users', getallUsers);
 router.post('/users',createNewUser);
 router.post('/users/role',findUserByRole);
-router.delete('/deleteUSer/:id',deleteUserByID);
-router.put('/updateUser/:id',updateUserById);
+router.delete('/users/:id',deleteUserByID);
+router.put('/users/:id',updateUserById);
 router.put('/userRoles',updateAllUsersByRole);
 
 
